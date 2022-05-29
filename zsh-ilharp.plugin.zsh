@@ -14,7 +14,16 @@ alias gc='git commit -v'
 alias gca='git commit -v --amend'
 alias gcmsg='git commit -m'
 
-alias gd='git diff'
+# alias gd='git diff'
+# git diff with untracked
+gd() {
+  (
+    git diff --color
+    git ls-files --others --exclude-standard |
+      while read -r i; do git diff --color -- /dev/null "$i"; done
+  ) | less
+}
+alias gdt='git diff'
 alias gda='git diff --cached'
 
 alias gf='git fetch'
