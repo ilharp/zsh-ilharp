@@ -10,8 +10,9 @@ alias e='exit'
 alias gst='git status'
 alias ga='git add'
 alias gaa='git add --all'
-alias grm='git rm --cached'
-alias grma="git rm --cached '*'"
+alias gai='git add -i'
+alias grma="git rm '**'"
+alias grmac="git rm --cached '**'"
 
 alias gc='git commit -v'
 alias gca='git commit -v --amend'
