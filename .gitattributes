@@ -1,0 +1,3 @@
+* text eol=lf
+
+harper_shell.cmd text eol=crlf
