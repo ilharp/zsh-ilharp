@@ -17,7 +17,7 @@ export ZSH=${ZSH_ILHARP_ROOT}/bundles/oh-my-zsh
 
 # Load bundles
 builtin source ${ZSH_ILHARP_ROOT}/bundles/oh-my-zsh/oh-my-zsh.sh
-builtin source ${ZSH_ILHARP_ROOT}/bundles/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+builtin source ${ZSH_ILHARP_ROOT}/bundles/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 builtin source ${ZSH_ILHARP_ROOT}/bundles/zsh-completions/zsh-completions.plugin.zsh
 builtin source ${ZSH_ILHARP_ROOT}/bundles/powerlevel10k/powerlevel10k.zsh-theme
 
