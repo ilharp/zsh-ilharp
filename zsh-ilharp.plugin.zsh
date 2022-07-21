@@ -22,7 +22,6 @@ builtin source ${ZSH_ILHARP_ROOT}/bundles/zsh-completions/zsh-completions.plugin
 builtin source ${ZSH_ILHARP_ROOT}/bundles/powerlevel10k/powerlevel10k.zsh-theme
 
 # Load configs
-builtin source ${ZSH_ILHARP_ROOT}/config-zstyle.zsh
 builtin source ${ZSH_ILHARP_ROOT}/config-p10k.zsh
 
 # Common alias
