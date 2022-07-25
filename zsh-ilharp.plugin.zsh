@@ -29,6 +29,7 @@ alias c='clear'
 alias e='exit'
 
 # Git alias
+alias g='git status'
 alias gst='git status'
 alias ga='git add'
 alias gaa='git add --all'
