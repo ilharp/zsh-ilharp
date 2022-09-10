@@ -30,7 +30,7 @@ alias e='exit'
 
 # Git alias
 alias g='git status'
-alias gst='git status'
+alias gst='g'
 alias ga='git add'
 alias gaa='git add --all'
 alias gai='git add -i'
@@ -54,7 +54,10 @@ alias gda='git diff --cached'
 
 alias gf='git fetch'
 alias gl='git pull'
+alias gfl='git fetch && git pull'
+alias gfgl='gfl'
 alias gp='git push'
 alias gpf='git push --force-with-lease'
 
-alias gr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%Creset - %C(auto)%d%Creset %s %Creset%C(bold green)(%ar)%Creset %C(dim white)- %an' --all"
+alias gr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%Creset - %C(auto)%d%Creset %s %Creset%C(bold green)(%ar)%Creset %C(dim white)- %an'"
+alias gra="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%Creset - %C(auto)%d%Creset %s %Creset%C(bold green)(%ar)%Creset %C(dim white)- %an' --all"
