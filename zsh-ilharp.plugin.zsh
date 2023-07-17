@@ -28,6 +28,10 @@ builtin source ${ZSH_ILHARP_ROOT}/config-p10k.zsh
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 alias k='kubectl'
 
+# rustup
+export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
+export RUSTUP_UPDATE_ROOT="https://mirrors.ustc.edu.cn/rust-static/rustup"
+
 # Common alias
 alias c='clear'
 alias e='exit'
