@@ -87,5 +87,5 @@ alias gpf='git push --force-with-lease'
 
 alias gsu='git submodule update --init --recursive'
 
-alias gr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ar)%C(reset) %C(dim white)- %an (%G?)'"
-alias gra="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ar)%C(reset) %C(dim white)- %an (%G?)' --all"
+alias gr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ar)%C(reset) %C(dim white)- %an'"
+alias gra="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ar)%C(reset) %C(dim white)- %an' --all"
