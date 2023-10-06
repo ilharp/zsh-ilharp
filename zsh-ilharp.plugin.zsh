@@ -67,6 +67,9 @@ alias gc='git commit -v'
 alias gca='git commit -v --amend'
 alias gcmsg='git commit -m'
 
+alias gcnm='git commit --allow-empty -m "chore: build"'
+alias gcnmsg='git commit --allow-empty -m'
+
 # git diff with untracked
 gd() {
   (
