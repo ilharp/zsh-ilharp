@@ -92,3 +92,5 @@ alias gsu='git submodule update --init --recursive'
 
 alias gr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ar)%C(reset) %C(dim white)- %an'"
 alias gra="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ar)%C(reset) %C(dim white)- %an' --all"
+
+[ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
