@@ -2,6 +2,9 @@
 # Set default editor
 export EDITOR='vim'
 
+# Enable less mouse support
+export LESS='-R --mouse --wheel-lines 3'
+
 # Set language
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
