@@ -90,6 +90,7 @@ alias gfl='git fetch && git pull'
 alias gfgl='gfl'
 alias gp='git push'
 alias gpf='git push --force-with-lease'
+alias glg='git log'
 
 alias gsu='git submodule update --init --recursive'
 
