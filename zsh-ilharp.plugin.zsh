@@ -38,7 +38,14 @@ alias k='kubectl'
 # dotnet
 _dotnet_zsh_complete()
 {
-  local completions=("$(dotnet complete "$words")")
+  local completions
+
+  if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" || "$OSTYPE" == "win32" ]]; then
+    # Use 'tr' to replace \r\n to \n, then use grep to remove empty line
+    completions=("$(dotnet complete "$words" | tr '\r\n' '\n' | grep -v '^$')")
+  else
+    completions=("$(dotnet complete "$words")")
+  fi
 
   # If the completion list is empty, just continue with filename selection
   if [ -z "$completions" ]
