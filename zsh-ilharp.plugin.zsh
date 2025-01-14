@@ -32,6 +32,9 @@ builtin source ${ZSH_ILHARP_ROOT}/config-p10k.zsh
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 alias k='kubectl'
 
+# Helm
+[[ $commands[helm] ]] && source <(helm completion zsh)
+
 # dotnet
 _dotnet_zsh_complete()
 {
