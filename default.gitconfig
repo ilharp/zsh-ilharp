@@ -1,0 +1,27 @@
+
+[user]
+	email = hi@ilharper.com
+	name = Il Harper
+	signingkey = 4B71FCA698E7E8EC
+[tag]
+	forceSignAnnotated = true
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = master
+[credential "https://dev.azure.com"]
+	usehttppath = true
+[core]
+	autocrlf = false
+	ignorecase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential "helperselector"]
+	selected = manager-core
+[pull]
+	rebase = false
+[push]
+	default = upstream
