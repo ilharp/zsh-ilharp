@@ -77,19 +77,13 @@ alias e='exit'
 
 # Git alias
 alias g='git status'
-alias gst='g'
 alias ga='git add'
 alias gaa='git add --all'
 alias gai='git add -i'
-alias grma="git rm '**'"
-alias grmac="git rm --cached '**'"
 
 alias gc='git commit -v'
 alias gca='git commit -v --amend'
 alias gcmsg='git commit -m'
-
-alias gcnm='git commit --allow-empty -m "chore: build"'
-alias gcnmsg='git commit --allow-empty -m'
 
 # git diff with untracked
 gd() {
@@ -104,15 +98,14 @@ alias gda='git diff --cached'
 
 alias gf='git fetch'
 alias gl='git pull'
-alias gfl='git fetch && git pull'
-alias gfgl='gfl'
+alias gfgl='git fetch && git pull'
 alias gp='git push'
-alias gpf='git push --force-with-lease'
-alias glg='git log'
 
 alias gsu='git submodule update --init --recursive'
 
 alias gr="git log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an'"
 alias gra="git log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an' --all"
+alias grr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an'"
+alias grra="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an' --all"
 
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
