@@ -112,7 +112,7 @@ alias glg='git log'
 
 alias gsu='git submodule update --init --recursive'
 
-alias gr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an'"
-alias gra="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an' --all"
+alias gr="git log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an'"
+alias gra="git log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an' --all"
 
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
