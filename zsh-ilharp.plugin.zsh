@@ -97,8 +97,7 @@ alias gdt='git diff'
 alias gda='git diff --cached'
 
 alias gf='git fetch'
-alias gl='git pull'
-alias gfgl='git fetch && git pull'
+alias gl='git fetch && git merge --ff-only'
 alias gp='git push'
 
 alias gsu='git submodule update --init --recursive'
