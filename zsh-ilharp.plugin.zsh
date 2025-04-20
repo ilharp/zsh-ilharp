@@ -100,6 +100,10 @@ alias gf='git fetch'
 alias gl='git fetch && git merge --ff-only'
 alias gp='git push'
 
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gcp='git cherry-pick'
+
 alias gsu='git submodule update --init --recursive'
 
 alias gr="git log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%aD, %ar)%C(reset) %C(dim white)- %an'"
