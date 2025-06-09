@@ -10,9 +10,6 @@ export LESS='-FRS'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# Disable zsh auto title
-DISABLE_AUTO_TITLE=true
-
 # Get root dir of zsh-ilharp
 ZSH_ILHARP_ROOT=$(dirname "$0")
 
