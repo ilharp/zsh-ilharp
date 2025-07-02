@@ -16,9 +16,6 @@ ZSH_ILHARP_ROOT=$(dirname "$0")
 # Export ohmyzsh root dir
 export ZSH=${ZSH_ILHARP_ROOT}/bundles/oh-my-zsh
 
-# Load the oh-my-zsh's library
-# antigen use oh-my-zsh
-
 # Load bundles
 builtin source ${ZSH_ILHARP_ROOT}/bundles/oh-my-zsh/oh-my-zsh.sh
 builtin source ${ZSH_ILHARP_ROOT}/bundles/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
