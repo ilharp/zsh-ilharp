@@ -11,7 +11,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Get root dir of zsh-ilharp
-ZSH_ILHARP_ROOT=$(dirname "$0")
+ZSH_ILHARP_ROOT="${0:A:h}"
 
 # Export ohmyzsh root dir
 export ZSH=${ZSH_ILHARP_ROOT}/bundles/oh-my-zsh
