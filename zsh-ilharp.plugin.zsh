@@ -68,6 +68,42 @@ export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottle
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 export HOMEBREW_PIP_INDEX_URL="https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
 
+# Remove homebrew provided completions
+# From https://stackoverflow.com/a/77774885
+if [[ $commands[brew] ]]
+then
+  # ------ Homebrew ZSH functions (for just + others)
+  # This will bring autocomplete for brew installed functions (exa, just, k6, etc)
+  # These will overwrite the oh-my-zsh plugins that conflict (like `git`)
+  # https://github.com/casey/just#shell-completion-scripts
+
+  # Init Homebrew, which adds environment variables
+  eval "$(brew shellenv)"
+
+  remove_conflicting_git_completions() {
+      local git_completion_bash="$HOMEBREW_PREFIX/share/zsh/site-functions/git-completion.bash"
+      local git_completion_zsh="$HOMEBREW_PREFIX/share/zsh/site-functions/_git"
+
+      [ -e "$git_completion_bash" ] && rm "$git_completion_bash"
+      [ -e "$git_completion_zsh" ] && rm "$git_completion_zsh"
+  }
+
+  # Delete the brew version of `git` completions because the built in ZSH
+  # ones are objectively better (and work with aliases)
+  # The reason this runs every time is because brew re-adds these files
+  # on `brew upgrade` (and other events)
+  remove_conflicting_git_completions
+
+  # Add Homebrew's site functions to fpath (minus git, because that causes conflicts)
+  # https://github.com/orgs/Homebrew/discussions/2797
+  # https://github.com/ohmyzsh/ohmyzsh/issues/8037
+  # https://github.com/ohmyzsh/ohmyzsh/issues/7062
+  fpath=($HOMEBREW_PREFIX/share/zsh/site-functions $fpath)
+
+  # Needed for autosuggestions (does compinit)
+  source $ZSH/oh-my-zsh.sh
+fi
+
 # Common alias
 alias c='clear'
 alias e='exit'
