@@ -145,3 +145,15 @@ alias grr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold b
 alias grra="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold blue)(%aD, %ar)%C(reset) %C(dim white)- %an' --all"
 
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
+
+# Increase history
+export HISTSIZE=500000
+export SAVEHIST=$HISTSIZE
+setopt appendhistory
+setopt extended_history       # record timestamp of command in HISTFILE
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+setopt share_history          # share command history data
+setopt INC_APPEND_HISTORY
