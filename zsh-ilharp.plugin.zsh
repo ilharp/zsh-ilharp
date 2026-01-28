@@ -104,6 +104,9 @@ then
   source $ZSH/oh-my-zsh.sh
 fi
 
+# ghcup-env
+[ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env"
+
 # Common alias
 alias c='clear'
 alias e='exit'
