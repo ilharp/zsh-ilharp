@@ -25,6 +25,9 @@ builtin source ${ZSH_ILHARP_ROOT}/bundles/powerlevel10k/powerlevel10k.zsh-theme
 # Load configs
 builtin source ${ZSH_ILHARP_ROOT}/config-p10k.zsh
 
+# Init Atuin
+eval "$(atuin init zsh)"
+
 # kubectl
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 alias k='kubectl'
