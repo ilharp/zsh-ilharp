@@ -117,6 +117,8 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gai='git add -i'
 
+alias s='stg status'
+
 alias gc='git commit -v'
 alias gca='git commit -v --amend'
 alias gcmsg='git commit -m'
