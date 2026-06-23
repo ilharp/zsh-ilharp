@@ -147,8 +147,6 @@ alias gra="git log --graph --date-order --abbrev-commit --decorate --format=form
 alias grr="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold blue)(%aD, %ar)%C(reset) %C(dim white)- %an'"
 alias grra="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold blue)(%aD, %ar)%C(reset) %C(dim white)- %an' --all"
 
-[ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
-
 # Increase history
 export HISTSIZE=500000
 export SAVEHIST=$HISTSIZE
